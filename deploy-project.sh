@@ -1,0 +1,1 @@
+cp .env.example .env && source ./.env && docker volume create pg_volume && docker compose up -d && docker exec -i iactions-library-database-1 psql -uroot -ppassword test-library < ./database.sql
