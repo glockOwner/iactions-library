@@ -2,7 +2,7 @@ FROM php:7.4-fpm-alpine
 
 RUN apk update && \
     apk upgrade && \
-    apk create --no-cache \
+    apk add --no-cache \
             postgresql-dev \
             git \
             unzip \
